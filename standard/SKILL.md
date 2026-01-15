@@ -33,11 +33,11 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 1. Agents SHOULD frequently check LSP (Language Server Protocol) messages (if available), linting outputs and type checking results. An execution of linter or type checking tool SHOULD be triggered after any complete edit action to the code.
 2. Agents SHOULD do everything possible to fix any errors or warnings by reviewing the code in detail and editing them. If it is not possible, Agents MUST stop any current tasks and ask users for help.
 3. Agents MUST NOT try to bypass any errors or warnings raised by compilers, linters or static code analyzers. Forbidden methods include but not limited to:
-    - Disabling or suppressing compiler warnings or linter rules by inserting disabling comments or editing configuration files.
-    - Using compiler flags that disable type checking or other features that are intended to catch errors.
-    - Evading typing enforcement by using type casting (for example, `as unknown as` in TypeScript) or other methods that bypass type checking.
-    - Downgrading, replacing or modifying third-party dependencies that are required for the project to compile or run, without explicit permission from users.
-    - Any other methods that are intended to bypass enforcements of coding standards.
+  - Disabling or suppressing compiler warnings or linter rules by inserting disabling comments or editing configuration files.
+  - Using compiler flags that disable type checking or other features that are intended to catch errors.
+  - Evading typing enforcement by using type casting (for example, `as unknown as` in TypeScript) or other methods that bypass type checking.
+  - Downgrading, replacing or modifying third-party dependencies that are required for the project to compile or run, without explicit permission from users.
+  - Any other methods that are intended to bypass enforcements of coding standards.
 
 ## 5. Documentation Fetching Rules
 
