@@ -46,13 +46,13 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 2. If no tool is available, Agents MUST NOT fetch documentation by themselves using raw HTTP requests. For example, agents must not use `curl` command to fetch websites.
 3. Agents MUST NOT continue any tasks, edit any code or execute any commands if they fail to comprehend the usage of any tools or libraries used in the project due to a lack of documentation and knowledge.
 
-## 6. Unit Testing Rules
+## 6. Testing Rules
 
-1. Agents SHOULD write unit tests for all code that is not trivial or obvious.
-  - Exception: Agents MAY choose not to write unit tests if there are no unit test frameworks available or if the project does not require unit testing.
-2. Unit tests SHOULD be written in a way that is easy to read and understand.
-3. Unit tests SHOULD cover all possible scenarios and edge cases.
-4. Agents MUST NOT write unit tests that cheat on the coverage of the code. Examples include but not limited to:
+1. Agents SHOULD write tests for all code that is not trivial or obvious.
+  - Exception: Agents MAY choose not to write tests if there are no test frameworks available or if the project does not require testing.
+2. Tests SHOULD be written in a way that is easy to read and understand.
+3. Tests SHOULD cover all possible scenarios and edge cases.
+4. Agents MUST NOT write tests that cheat on the coverage of the code. Examples include but not limited to:
   - Writing tests that only execute code without asserting behavior
   - Adding meaningless tests that pass trivially (assert True)
   - Testing trivial code while avoiding complex logic
