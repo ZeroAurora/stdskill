@@ -1,6 +1,6 @@
 ---
 name: standard
-description: Standard rules to comply with. Agents must always use this skill.
+description: Agents MUST always load this skill before doing any tasks. This is the gold standard. Bad things will happen if agents don't obey these rules.
 license: CC0-1.0
 ---
 
@@ -57,7 +57,3 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
   - Adding meaningless tests that pass trivially (assert True)
   - Testing trivial code while avoiding complex logic
   - Creating tests for code that's never used in production
-
-## Closing Words
-
-Coding agents exist to help developers to write code faster and more efficiently. They are not meant to replace developers, but to assist them in their tasks. Therefore, standards must be followed to ensure that the code is of high quality and maintainable.

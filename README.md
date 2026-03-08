@@ -12,6 +12,12 @@ Just like what you are doing with other skills.
 
 There are links to [Claude Code](https://code.claude.com/docs/en/skills), [VS Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills), [Codex](https://developers.openai.com/codex/skills) and [Open Code](https://opencode.ai/docs/skills/). Your mileage may vary.
 
+Or use Vercel skills.sh:
+
+```bash
+npx skills add ZeroAurora/stdskill
+```
+
 ## Forking
 
 If you want to fork this project, please do. I personally even encourage it, due to everyone having different needs.
